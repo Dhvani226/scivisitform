@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        /* Import Google Font - Poppins */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            overflow: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Full screen scrollable container */
+        .container {
+            background-color: white;
+            padding: 200px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+             /* Limits width for better readability */
+            height: 100vh; /* Full-screen height */
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #007bff;
+        }
+
+        /* Progress bar styling */
+        .progress-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .circle.active {
+            background-color: #007bff;
+        }
+
+        .bar {
+            flex: 1;
+            height: 4px;
+            background-color: #ccc;
+            margin: 0 10px;
+        }
+
+        .bar.active {
+            background-color: #007bff;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* Label Styling */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        /* Input Fields Styling */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Required Field Indicator */
+        .required {
+            color: red;
+        }
+
+        /* Buttons Container */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Back Button Styling */
+        .back-btn {
+            background-color: #ccc;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            background-color: #999;
+        }
+
+        /* Next Button Styling */
+        .next-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .next-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .back-btn,
+            .next-btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+
+        <div class="progress-container">
+            <div class="circle active">1</div>
+            <div class="bar active"></div>
+            <div class="circle">2</div>
+            <div class="bar"></div>
+            <div class="circle">3</div>
+            <div class="bar"></div>
+            <div class="circle">4</div>
+        </div> 
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Login For School:</h2>
+        </div>
+
+        <form action="index.html">
+            <label for="school-name">Name of the School: <span class="required">*</span></label>
+            <input type="text" id="school-name" name="school-name" required>
+
+            <label for="email">Email ID: <span class="required">*</span></label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password: <span class="required">*</span></label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="buttons">
+                <a href="index.html" class="back-btn">Back</a>
+                <button type="submit" class="next-btn">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for National Science Day</title>
+    <link rel="stylesheet" href="index4.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for National Science Day</h1>
+
+        <div class="form-section">
+            <div class="form-section">
+                <h2 style="color: white;">Participants' Details of Poster competition:</h2>
+              </div>
+            <form action="index2.html">
+                <label for="essay"><strong>Name of the Participant-1 for  Poster competition:*</strong>
+                     <span class="required">*</span></label>
+                <input type="text" id="poster" name="poster" value="" required>
+                
+                <label for="gender"><strong>Gender of the Participant-1 for  Poster competition:* 
+                    <span class="required">*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="gender"></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="class"><strong>Class of the Participant-1 for  Poster competition *</strong> <span style="color:red;">*</span></label><br>
+                <select id="class" name="class" required>
+                    <option value="class"></option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                </select>
+
+                <label for="accommodation"><strong>Will the participant-1 for poster competition require accommodation facility?</strong> <span style="color:red;">*</span></label>
+                <small>(Provided, if selected for Final Round at IPR)</small><br><br>
+                
+                <select id="accommodation" name="accommodation" required>
+                    <option value="facility"></option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+                <strong> Declaration by Participant-1 for Poster :</strong><br>
+                <p style="font-size: 16px;">
+                     <span style="font-weight: bold;">1. Write: Poster - NSD2024</span> on the top of the cover.
+                  </p>
+                 <p style="font-size: 16px;">
+                    <span style="font-weight:lighter;">2. Send your poster to the following address by post or courier</span>
+                 </p><br>
+                 <div class="address">
+                    <p><strong>To,<br>
+                   Coordinator-NSD2024<br>
+                    Institute for Plasma Research,<br>
+                    Nr. Indira Bridge, Bhat village,<br>
+                    Gandhinagar, Gujarat 382428</strong></p>
+                </div><br>
+                <p >This poster is hand drawn/painted by me only.  I have not computer generated (not digitally made) this poster.</p>
+                <input type="radio" id="declaration" name="declaration" required> I declare that this is my own work.
+            </div><br>
+            <strong>Continue further to enter details of other competitions.... *</strong><br>
+<input type="radio" id="declaration" name="declaration" required> Back to Competitions Section
+                <label for="essay">Name of the Participant-2 for  Poster competition:*
+                    <span class="required">*</span></label>
+               <input type="text" id="poster" name="poster" value="" required>
+
+               <label for="gender">Gender of the Participant-2 for  Poster competition:* 
+                <span class="required">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="gender"></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="class"><strong>Class of the Participant-2 for  Poster competition *</strong> <span style="color:red;">*</span></label><br>
+            <select id="class" name="class" required>
+                <option value="class"></option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+            </select>
+            <label for="accommodation"><strong>Will the participant- for poster competition require accommodation facility?</strong> <span style="color:red;">*</span></label>
+            <small>(Provided, if selected for Final Round at IPR)</small><br>
+            <select id="accommodation" name="accommodation" required>
+                <option value="facility"></option>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <p style="font-size: 16px;">
+                <span style="font-weight: bold;">1. Write: Poster - NSD2024</span> on the top of the cover.
+             </p>
+            <p style="font-size: 16px;">
+               <span style="font-weight:lighter;">2. Send your poster to the following address by post or courier</span>
+            </p><br>
+            <div class="address">
+               <p><strong>To,<br>
+              Coordinator-NSD2024<br>
+               Institute for Plasma Research,<br>
+               Nr. Indira Bridge, Bhat village,<br>
+               Gandhinagar, Gujarat 382428</strong></p>
+           </div><br>
+                <div class="form-group">
+                   
+                    <p class="declaration-text">This poster is hand drawn/painted by me only.  I have not computer generated (not digitally made) this poster.</p>
+                    <input type="radio" id="declaration" name="declaration" required> I declare that this is my own work.
+                </div><br>
+                <p>Continue further to enter details of other competitions.... *</strong>s</p>
+<input type="radio" id="declaration" name="declaration" required> Back to Competitions Section
+                <div class="buttons">
+                    <a href="competition.html" class="back-btn">Back</a>
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

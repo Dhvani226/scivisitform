@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="competition.css"> <!-- Link the external stylesheet -->
+    <style>
+        /* Custom CSS to make all text bold */
+        body, h1, h2, strong, label {
+            font-weight: bold; /* Makes all text bold */
+        }
+
+        /* Add spacing between the radio buttons and the text */
+        input[type="radio"] {
+            margin-right: 10px; /* Adds space between the radio button and the text */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+        <div class="progress-container">
+            <div class="circle active">1</div>
+            <div class="bar active"></div>
+            <div class="circle active">2</div>
+            <div class="bar active"></div>
+            <div class="circle active">3</div>
+            <div class="bar active"></div>
+            <div class="circle active">4</div>
+        </div>
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2 style="color: white;">Participants' details of Skit competition:</h2>
+        </div>
+        <form action="iprpage3.html">
+            <strong>Select a competition and fill the details. Come back to this section to fill details of other competitions and so on. 
+                Once the details of all competitions are filled, choose Submit option.
+                Note- "Complete Submission" option is at the end of the form.</strong>
+                
+            <input type="radio" id="declaration" name="declaration" required> Student's Model-1<br>
+            <input type="radio" id="declaration" name="declaration" required>Student's Model-2 <br>
+            <input type="radio" id="declaration" name="declaration" required>Quiz <br>
+            <input type="radio" id="declaration" name="declaration" required>Eloquence - English<br>
+            <input type="radio" id="declaration" name="declaration" required>Eloquence - Hindi <br>
+            <input type="radio" id="declaration" name="declaration" required>Eloquence - Gujarati<br>
+            <input type="radio" id="declaration" name="declaration" required>Essay - English <br>
+            <input type="radio" id="declaration" name="declaration" required>Essay - Hindi <br>
+            <input type="radio" id="declaration" name="declaration" required>Essay - Gujarati<br>
+            <input type="radio" id="declaration" name="declaration" required>Poster <br>
+            <input type="radio" id="declaration" name="declaration" required>Skit <br>
+            <input type="radio" id="declaration" name="declaration" required>Teacher Model <br>
+            <input type="radio" id="declaration" name="declaration" required>Complete Submission <br>
+            
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="index2.html" class="back-btn">Back</a>
+                <button type="submit" class="next-btn">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HTML and Body Styling for full width and height */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent body overflow, we'll handle scrolling in container */
+}
+
+/* Body Styling */
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    border: 2px solid #007bff;
+    overflow-y: auto; /* Enable scrolling inside container */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Section Styling */
+.form-section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+/* Label Styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="file"],
+input[type="url"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Upload Icon */
+.upload-icon {
+    margin-right: 5px;
+}
+
+/* Required Field Indicator */
+.required {
+    color: red;
+}
+
+/* Instruction Text Styling */
+.instruction {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Dropdown Styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Container for custom arrow */
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Focus and Hover States for Dropdown */
+select:focus,
+select:hover {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* File Upload Styling */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Back Button Styling */
+.back-btn {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #999;
+}
+
+/* Next Button Styling */
+.next-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Disabled State */
+select:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Ensure Scroll for Overflow Content */
+.container {
+    overflow-y: auto;
+}

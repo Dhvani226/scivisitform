@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for National Science Day</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for National Science Day</h1>
+
+        <div class="form-section">
+            <div class="form-section">
+                <h2 style="color: white;">Participant Details of Essay-English competition:</h2>
+              </div>
+              
+            <form action="index2.html">
+                <label for="essay">Name of the Participant for Essay-English: <span class="required">*</span></label>
+                <small>(This student will <strong>not</strong> participate in Essay-Hindi and Essay-Gujarati competitions.)</small>
+                <input type="text" id="essay" name="essay" value="" required>
+                
+                <label for="gender">Gender of the Participant for Essay-English: <span class="required">*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="gender"></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="class"><strong>Class of the Participant for Essay-English: *</strong> <span style="color:red;">*</span></label><br>
+                <select id="class" name="class" required>
+                    <option value="class"></option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                </select>
+
+                <label for="accommodation"><strong>Will the participant for Essay English competition require accommodation facility?</strong> <span style="color:red;">*</span></label>
+                <small>(Provided, if selected for Final Round at IPR)</small><br><br>
+                
+                <select id="accommodation" name="accommodation" required>
+                    <option value="facility"></option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+                <div class="form-container">
+                    <!-- Custom File Upload Button -->
+                    <div class="form-group">
+                        <label for="file-input">Please upload your hand written Essay-English in PDF format only. (max 1 MB)*</label>
+                        <small>Upload 1 supported file: PDF. Max 1 MB.</small>
+                        <label id="file-label" for="file-input" class="custom-file-upload">
+                            <span class="upload-icon">⬆</span> Add file
+                        </label>
+                        <input type="file" id="file-input" name="file-input" accept=".pdf" required style="display: none;" />
+                        <!-- Link to open the file -->
+                        <br><a id="file-link" href="#" style="display:none;" target="_blank">Open uploaded file</a>
+                    </div><br>
+
+                    <!-- Declaration Field -->
+                    <div class="form-group">
+                        <strong for="declaration">Declaration by Participant for Essay-English:</strong><br><br>
+                        <p class="declaration-text">This essay is hand-written by me only. Essay contents are not copied from any book/magazine/internet etc.</p>
+                        <input type="radio" id="declaration" name="declaration" required> I declare that this is my own work.
+                    </div><br>
+                
+                    <!-- Other Competitions Field -->
+                    <div class="form-group">
+                        <strong for="competitions">Continue further to enter details of other competitions...</strong><br><br>
+                        <input type="radio" id="competitions" name="competitions" required> Back to Competitions Section
+                    </div>
+                </div><br>
+            
+                <div class="buttons">
+                    <a href="competition.html" class="back-btn">Back</a>
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const fileInput = document.getElementById('file-input');
+        const fileLabel = document.getElementById('file-label');
+        const fileLink = document.getElementById('file-link');
+
+        fileInput.addEventListener('change', function() {
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const fileName = file.name;
+                const fileURL = URL.createObjectURL(file);
+                fileLabel.innerHTML = `<span class="upload-icon">⬆</span> ${fileName}`;
+                fileLink.href = fileURL;
+                fileLink.style.display = 'inline'; // Show the link
+            } else {
+                fileLabel.innerHTML = `<span class="upload-icon">⬆</span> Add file`;
+                fileLink.style.display = 'none'; // Hide the link
+            }
+        });
+    </script>
+  
+</body>
+</html>

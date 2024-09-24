@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+
+      
+        <div class="progress-container">
+            <div class="circle active">1</div>
+            <div class="bar active"></div>
+            <div class="circle active">2</div>
+            <div class="bar active"></div>
+            <div class="circle active">3</div>
+            <div class="bar active"></div>
+            <div class="circle">4</div>
+        </div> 
+        
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2 style="color: white;">Student Accompanying Teacher Details:</h2>
+          </div>
+          
+            <form action="competition.html">
+                <label for="accompanying-teacher">Name of the Accompanying Teacher : <span class="required">*</span></label>
+                <input type="text" id="accompanying-teacher" name="accompanying-teacher" value="" required>
+
+                <label for="gender">Gender of the Accompanying Teacher:</label>
+<select id="gender" name="gender" required>
+  <option value="">Choose</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Others</option>
+</select>
+
+<div class="dropdown-container">
+    <label for="accommodation">Do the Accompanying Teacher require Accommodation facility?</label>
+    <div class="description">(Provided, if selected for Final Round at IPR)</div>
+    <select id="accommodation" name="accommodation" required>
+        <option value="">Choose</option>
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+    </select>
+</div>
+
+                <div class="buttons">
+                    <a href="index.html" class="back-btn">Back</a>
+                    <button type="submit" class="next-btn">Register</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="validateForm.js"></script>
+</body>
+</html>
+
